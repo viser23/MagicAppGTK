@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlatformTarget>x64</PlatformTarget>
+    <Nullable>disable</Nullable>
+    <AssemblyName>collection-reader</AssemblyName>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <!-- Read-only helper: no network, no self-update -->
+    <UseSystemResourceKeys>true</UseSystemResourceKeys>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="vendor/HackF5.UnitySpy/HackF5.UnitySpy.csproj" />
+  </ItemGroup>
+
+  <!-- Keep the vendored library sources out of this project's own compilation -->
+  <ItemGroup>
+    <Compile Remove="vendor/**" />
+  </ItemGroup>
+
+</Project>
