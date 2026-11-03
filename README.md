@@ -5,19 +5,33 @@ Non serve nessun account e i tuoi dati restano sul tuo PC.
 
 > **È una beta.** Qualcosa può non funzionare: trovare questi problemi è proprio lo scopo del test.
 
-## Avvio
+## Installazione
 
-1. Scarica `MagicAppGTK-…-portable.exe` dall'[ultima release](https://github.com/viser23/MagicAppGTK/releases/latest).
-2. Mettilo in una cartella tutta sua, per esempio `C:\Giochi\MagicAppGTK`. Evita `Program Files`, dove l'app non può scrivere.
-3. Fai doppio clic. Non c'è nulla da installare.
+1. Scarica `MagicAppGTK-Setup-….exe` dall'[ultima release](https://github.com/viser23/MagicAppGTK/releases/latest).
+2. Fai doppio clic. L'installazione dura pochi secondi, non chiede i permessi di amministratore e alla fine apre l'app. La trovi poi nel menu Start come **MagicAppGTK**.
 
-L'avvio richiede qualche secondo, perché ogni volta l'exe scompatta il programma.
+**Avviso "PC protetto da Windows":** compare perché l'installer non è firmato digitalmente. Clicca **Ulteriori informazioni** e poi **Esegui comunque**. Serve solo la prima volta: gli aggiornamenti non lo mostrano.
 
-**Avviso "PC protetto da Windows":** compare perché l'exe non è firmato digitalmente. Clicca **Ulteriori informazioni** e poi **Esegui comunque**.
-
-**Antivirus:** alcuni potrebbero segnalare l'exe, perché è auto-estraente e contiene uno strumento che legge la memoria di Arena (vedi [Cosa fa sul tuo PC](#cosa-fa-sul-tuo-pc)).
+**Antivirus:** alcuni potrebbero segnalare l'app, perché contiene uno strumento che legge la memoria di Arena (vedi [Cosa fa sul tuo PC](#cosa-fa-sul-tuo-pc)).
 
 Serve Windows 10 o 11 a 64 bit.
+
+### Se usavi la versione portable
+
+Al primo avvio l'app chiede **Import data from the portable version?**. Clicca **Choose folder…** e scegli la cartella dove tenevi l'exe portable (quella con dentro `MagicAppGTK-data`). Partite, mazzi, collezione, tag, impostazioni e immagini delle carte passano all'app installata; i file della portable non vengono toccati.
+
+Chiudi la versione portable prima di installare. Quando hai controllato che nell'app installata c'è tutto, puoi cancellare l'exe portable e la cartella `MagicAppGTK-data`.
+
+Se non hai mai usato la portable, clicca **Start fresh**.
+
+## Aggiornamenti
+
+L'app si aggiorna da sola. Controlla se c'è una nuova versione all'avvio e poi ogni 4 ore, la scarica in background e, quando è pronta, mostra un riquadro in basso a destra:
+
+- **Restart now:** l'app si chiude, si aggiorna e si riapre in pochi secondi.
+- **Later:** l'aggiornamento si installa quando chiudi l'app.
+
+Durante una partita il riquadro non compare: aspetta la fine della partita. In **Settings → Updates** vedi la versione installata e puoi controllare subito con **Check for updates**. Le novità di ogni versione sono nel riquadro (**What's new**) e nella pagina delle [release](https://github.com/viser23/MagicAppGTK/releases).
 
 ## Configurare Arena (una volta sola)
 
@@ -31,31 +45,31 @@ Se in **Collection** compare l'avviso "card catalog was not found", Arena è ins
 | Funzione | Come | Cosa controllare |
 |---|---|---|
 | Partite e mazzi | Apri Arena, poi tieni l'app aperta mentre giochi | Risultato, formato e mazzo corretti; le carte viste dall'avversario |
+| Partita in corso | Inizia una partita con l'app aperta | La pagina **Live Match** si apre da sola: il tuo mazzo con le carte rimaste nel grimorio e le carte dell'avversario |
 | Collezione | Con Arena aperto e il login fatto, **Collection → Sync from Arena** | Carte possedute e wildcard corrispondono al gioco |
 | Immagini carte | **Collection → Download images** | Il download finisce e le immagini si vedono |
 | Valutazioni Limited | **Settings → Limited Ratings → Download from 17Lands** | I dati si scaricano e compaiono sulle carte |
+| Aggiornamento | Quando compare il riquadro, **Restart now** | L'app si riapre alla nuova versione con tutti i dati |
 | Salvataggio dati | Chiudi e riapri l'app | Partite e impostazioni sono ancora lì |
 
 Arena azzera il suo log a ogni avvio, quindi l'app registra solo le partite giocate mentre è aperta.
 
 ## Dove finiscono i dati
 
-Tutto sta in `MagicAppGTK-data\`, creata accanto all'exe: database, immagini, impostazioni e log.
+- **Programma:** `%LOCALAPPDATA%\Programs\mtg-arena-auto-tracker`
+- **Dati** (database, immagini, impostazioni e log): `%APPDATA%\mtg-arena-auto-tracker`. Per aprire la cartella, incolla il percorso nella barra degli indirizzi di Esplora file.
 
-- **Per rimuovere tutto:** chiudi l'app e cancella l'exe e quella cartella. Non restano installazioni né voci di registro.
-- **Per spostare l'app:** sposta l'exe e la cartella insieme.
-- **Per aggiornare:** metti il nuovo exe nella stessa cartella. I dati restano.
+**Per disinstallare:** **Impostazioni di Windows → App → App installate → MagicAppGTK → Disinstalla**. I dati restano, così una reinstallazione ritrova tutto. Per cancellare anche quelli, elimina poi la cartella dei dati.
 
 Le immagini occupano spazio: tutti i set insieme arrivano a circa 2 GB.
-Mentre è aperta, l'app tiene il programma scompattato in una cartella temporanea di Windows, che viene rimossa alla chiusura.
 
 ## Segnalare un problema
 
 Apri una [issue](https://github.com/viser23/MagicAppGTK/issues) (serve un account GitHub gratuito) e scrivi:
 
-- cosa stavi facendo;
+- cosa stavi facendo e quale versione usi (**Settings → Updates**);
 - cosa ti aspettavi e cosa è successo;
-- se puoi, allega `MagicAppGTK-data\logs\app.log`. Se il problema era nella sessione precedente, allega anche `app.previous.log`.
+- se puoi, allega `%APPDATA%\mtg-arena-auto-tracker\logs\app.log`. Se il problema era nella sessione precedente, allega anche `app.previous.log`.
 
 I log contengono i percorsi dei file, quindi anche il tuo nome utente di Windows. Controllali prima di pubblicarli: una issue è visibile a tutti.
 
@@ -63,6 +77,7 @@ I log contengono i percorsi dei file, quindi anche il tuo nome utente di Windows
 
 - **Legge** il log di Arena (`Player.log`) e il file delle carte nella cartella di Arena, senza modificarli.
 - **Scarica** dati e immagini delle carte da Scryfall e le statistiche da 17Lands. Non invia i tuoi dati a nessuno e non c'è telemetria.
+- **Controlla gli aggiornamenti** leggendo le release di questo repository su GitHub, e scarica da lì le nuove versioni.
 - **Legge la memoria di Arena solo per la collezione**, quando clicchi **Sync from Arena** o se attivi tu la sincronizzazione automatica. Lo fa `collection-reader`, un piccolo programma separato: legge soltanto, non modifica il gioco, non usa la rete e non chiede i privilegi di amministratore.
 
 Questo strumento non è approvato da Wizards of the Coast. Se preferisci non usare la lettura della memoria, non cliccare **Sync from Arena**: puoi importare la collezione da un file con **Import CSV**.
