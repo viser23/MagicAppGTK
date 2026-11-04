@@ -49,6 +49,9 @@ Se in **Collection** compare l'avviso "card catalog was not found", Arena è ins
 | Collezione | Con Arena aperto e il login fatto, **Collection → Sync from Arena** | Carte possedute e wildcard corrispondono al gioco |
 | Immagini carte | **Collection → Download images** | Il download finisce e le immagini si vedono |
 | Valutazioni Limited | **Settings → Limited Ratings → Download from 17Lands** | I dati si scaricano e compaiono sulle carte |
+| Mazzo dell'avversario | Gioca una partita Constructed (per esempio Standard) | Nella pagina **Live Match**, dopo un paio di carte dell'avversario, il riquadro **Probable deck** indica il mazzo più probabile e **Still to expect** le carte che possono ancora arrivare |
+| Costruire un mazzo | **Decks → + New deck**, oppure **Import list** con una lista copiata da Arena | Aggiunta e rimozione delle carte, salvataggio, **📋 Copy for Arena** da incollare in Arena |
+| Avvio con Windows | **Settings → Preferences → Start with Windows (in the system tray)** | Al riavvio del PC l'app parte nella barra delle icone, senza aprire la finestra |
 | Aggiornamento | Quando compare il riquadro, **Restart now** | L'app si riapre alla nuova versione con tutti i dati |
 | Salvataggio dati | Chiudi e riapri l'app | Partite e impostazioni sono ancora lì |
 
@@ -76,7 +79,7 @@ I log contengono i percorsi dei file, quindi anche il tuo nome utente di Windows
 ## Cosa fa sul tuo PC
 
 - **Legge** il log di Arena (`Player.log`) e il file delle carte nella cartella di Arena, senza modificarli.
-- **Scarica** dati e immagini delle carte da Scryfall e le statistiche da 17Lands. Non invia i tuoi dati a nessuno e non c'è telemetria.
+- **Scarica** dati e immagini delle carte da Scryfall, le statistiche da 17Lands e, una volta alla settimana, le liste dei mazzi Standard pubblicate da Wizards of the Coast su magic.gg (per indovinare il mazzo dell'avversario). Non invia i tuoi dati a nessuno e non c'è telemetria.
 - **Controlla gli aggiornamenti** leggendo le release di questo repository su GitHub, e scarica da lì le nuove versioni.
 - **Legge la memoria di Arena solo per la collezione**, quando clicchi **Sync from Arena** o se attivi tu la sincronizzazione automatica. Lo fa `collection-reader`, un piccolo programma separato: legge soltanto, non modifica il gioco, non usa la rete e non chiede i privilegi di amministratore.
 
@@ -86,7 +89,7 @@ Questo strumento non è approvato da Wizards of the Coast. Se preferisci non usa
 
 - **MagicAppGTK:** licenza [MIT](LICENSE). Nasce come fork di [MTG Arena Tracker](https://github.com/Shalkith/MTG-Arena-Tracker) di Shalkith. Questo repository non contiene il suo codice sorgente.
 - **collection-reader:** licenza [GPL-3.0](native/collection-reader/LICENSE), sorgente completo in [`native/collection-reader`](native/collection-reader). Include [HackF5.UnitySpy](https://github.com/frcaton/mtga-tracker-daemon).
-- **Dati:** [Scryfall](https://scryfall.com/) e [17Lands](https://www.17lands.com/).
+- **Dati:** [Scryfall](https://scryfall.com/), [17Lands](https://www.17lands.com/) e le liste dei mazzi di [magic.gg](https://magic.gg/).
 
 ## Progetto non ufficiale
 
