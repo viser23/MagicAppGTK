@@ -45,10 +45,13 @@ Se in **Collection** compare l'avviso "card catalog was not found", Arena è ins
 | Funzione | Come | Cosa controllare |
 |---|---|---|
 | Partite e mazzi | Apri Arena, poi tieni l'app aperta mentre giochi | Risultato, formato e mazzo corretti; le carte viste dall'avversario |
-| Partita in corso | Inizia una partita con l'app aperta | La pagina **Live Match** si apre da sola: il tuo mazzo con le carte rimaste nel grimorio e le carte dell'avversario |
+| Partita in corso | Inizia una partita con l'app aperta | La pagina **Live Match** si apre da sola: il tuo mazzo con le carte rimaste nel grimorio e le carte dell'avversario; in alto, per ogni tuo turno, il mana disponibile, quello speso per colore e quello rimasto inutilizzato, e sotto le carte pescate e giocate |
+| Analisi dei turni | A partita finita, **Matches → Turns** | Il grafico del mana con carte pescate e giocate, tuo e dell'avversario, per ogni game; se eri di mano o di pescata |
 | Collezione | Con Arena aperto e il login fatto, **Collection → Sync from Arena** | Carte possedute e wildcard corrispondono al gioco |
 | Immagini carte | **Collection → Download images** | Il download finisce e le immagini si vedono |
-| Valutazioni Limited | **Settings → Limited Ratings → Download from 17Lands** | I dati si scaricano e compaiono sulle carte |
+| Valutazioni Limited | **Settings → Limited Ratings → Download from 17Lands** (Premier + Quick Draft) | I dati si scaricano e compaiono sulle carte |
+| Draft in corso | Scarica i dati 17Lands del set, poi inizia un draft (Premier o Quick) con l'app aperta | La pagina **Live Draft** si apre da sola: le carte del pacchetto in ordine di consiglio, ognuna con le sue motivazioni; a lato il tuo pool, i colori aperti e, dalla pick 9, le carte prese dagli altri |
+| Storico dei draft | **Live Draft → History → Review** | Ogni pick con il pacchetto com'era e il consiglio di quel momento |
 | Mazzo dell'avversario | Gioca una partita Constructed (per esempio Standard) | Nella pagina **Live Match**, dopo un paio di carte dell'avversario, il riquadro **Probable deck** indica il mazzo più probabile e **Still to expect** le carte che possono ancora arrivare |
 | Costruire un mazzo | **Decks → + New deck**, oppure **Import list** con una lista copiata da Arena | Aggiunta e rimozione delle carte, salvataggio, **📋 Copy for Arena** da incollare in Arena |
 | Avvio con Windows | **Settings → Preferences → Start with Windows (in the system tray)** | Al riavvio del PC l'app parte nella barra delle icone, senza aprire la finestra |
