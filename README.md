@@ -1,7 +1,7 @@
 # MagicAppGTK (beta)
 
 Un compagno per MTG Arena su Windows. Registra partite e mazzi leggendo il log del gioco e mostra collezione, statistiche e valutazioni delle carte per il Limited.
-Non serve nessun account e i tuoi dati restano sul tuo PC.
+Non serve nessun account e i tuoi dati restano sul tuo PC, tranne i draft che scegli di condividere con gli amici.
 
 > **È una beta.** Qualcosa può non funzionare: trovare questi problemi è proprio lo scopo del test.
 
@@ -52,6 +52,7 @@ Se in **Collection** compare l'avviso "card catalog was not found", Arena è ins
 | Valutazioni Limited | **Settings → Limited Ratings → Download from 17Lands** (Premier + Quick Draft) | I dati si scaricano e compaiono sulle carte |
 | Draft in corso | Scarica i dati 17Lands del set, poi inizia un draft (Premier o Quick) con l'app aperta | La pagina **Live Draft** si apre da sola: le carte del pacchetto in ordine di consiglio, ognuna con le sue motivazioni; a lato il tuo pool, i colori aperti e, dalla pick 9, le carte prese dagli altri |
 | Storico dei draft | **Live Draft → History → Review** | Ogni pick con il pacchetto com'era e il consiglio di quel momento |
+| Draft con un amico | Prima in **Settings → Draft with Friends** scrivete il vostro nome. Chi gioca, durante il draft: **Live Draft → Share draft** e manda il codice all'amico; l'amico: **Live Draft → Friend**, incolla il codice e **Follow** | L'amico vede le tue pick in diretta e ti consiglia con stelle, nota e tag; tu vedi i consigli sotto le carte, con il bordo verde o rosso, e puoi accettare un tag o ignorare un amico |
 | Mazzo dell'avversario | Gioca una partita Constructed (per esempio Standard) | Nella pagina **Live Match**, dopo un paio di carte dell'avversario, il riquadro **Probable deck** indica il mazzo più probabile e **Still to expect** le carte che possono ancora arrivare |
 | Costruire un mazzo | **Decks → + New deck**, oppure **Import list** con una lista copiata da Arena | Aggiunta e rimozione delle carte, salvataggio, **📋 Copy for Arena** da incollare in Arena |
 | Avvio con Windows | **Settings → Preferences → Start with Windows (in the system tray)** | Al riavvio del PC l'app parte nella barra delle icone, senza aprire la finestra |
@@ -85,6 +86,7 @@ I log contengono i percorsi dei file, quindi anche il tuo nome utente di Windows
 - **Legge** il log di Arena (`Player.log`) e il file delle carte nella cartella di Arena, senza modificarli.
 - **Scarica** dati e immagini delle carte da Scryfall, le statistiche da 17Lands e, una volta alla settimana, le liste dei mazzi Standard pubblicate da Wizards of the Coast su magic.gg (per indovinare il mazzo dell'avversario). Non invia i tuoi dati a nessuno e non c'è telemetria.
 - **Controlla gli aggiornamenti** leggendo le release di questo repository su GitHub, e scarica da lì le nuove versioni.
+- **Condivide un draft solo se lo chiedi tu** con **Share draft**: le carte del pacchetto, le tue pick, il nome che hai scelto e i consigli degli amici passano da un database Firebase (Google), con un accesso anonimo e senza account. Lo legge solo chi ha il codice. Con **Stop sharing** il draft si cancella subito; altrimenti dopo 24 ore nessuno può più leggerlo e l'app lo cancella al primo avvio successivo. L'email in Settings resta sul tuo PC.
 - **Legge la memoria di Arena solo per la collezione**, quando clicchi **Sync from Arena** o se attivi tu la sincronizzazione automatica. Lo fa `collection-reader`, un piccolo programma separato: legge soltanto, non modifica il gioco, non usa la rete e non chiede i privilegi di amministratore.
 
 Questo strumento non è approvato da Wizards of the Coast. Se preferisci non usare la lettura della memoria, non cliccare **Sync from Arena**: puoi importare la collezione da un file con **Import CSV**.
