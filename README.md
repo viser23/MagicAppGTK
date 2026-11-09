@@ -57,6 +57,7 @@ Se in **Collection** compare l'avviso "card catalog was not found", Arena è ins
 | Costruire un mazzo | **Decks → + New deck**, oppure **Import list** con una lista copiata da Arena | Aggiunta e rimozione delle carte, salvataggio, **📋 Copy for Arena** da incollare in Arena |
 | Avvio con Windows | **Settings → Preferences → Start with Windows (in the system tray)** | Al riavvio del PC l'app parte nella barra delle icone, senza aprire la finestra |
 | Aspetto | **Settings → Appearance**: scegli un tema (un colore, una gilda, una famiglia o un clan) e uno sfondo; oppure **Collection**, seleziona una carta e **Use as app background** | I colori cambiano subito e restano dopo il riavvio; l'illustrazione si vede dietro tutte le pagine e il testo resta leggibile |
+| Carte in italiano | **Settings → Card Language → Italiano**, poi in **Collection** seleziona una carta; prova anche la ricerca nel testo (**¶**) con parole italiane | Nome, tipo e testo della carta sono quelli di Arena in italiano, un'abilità per riga; le carte doppie mostrano tutte e due le facce |
 | Aggiornamento | Quando compare il riquadro, **Restart now** | L'app si riapre alla nuova versione con tutti i dati |
 | Salvataggio dati | Chiudi e riapri l'app | Partite e impostazioni sono ancora lì |
 
