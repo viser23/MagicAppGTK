@@ -55,6 +55,7 @@ Se in **Collection** compare l'avviso "card catalog was not found", Arena è ins
 | Mazzo dell'avversario | Gioca una partita Constructed (per esempio Standard) | Nella pagina **Live Match**, dopo un paio di carte dell'avversario, il riquadro **Probable deck** indica il mazzo più probabile e **Still to expect** le carte che possono ancora arrivare |
 | Costruire un mazzo | **Decks → + New deck**, oppure **Import list** con una lista copiata da Arena | Aggiunta e rimozione delle carte, salvataggio, **📋 Copy for Arena** da incollare in Arena |
 | Avvio con Windows | **Settings → Preferences → Start with Windows (in the system tray)** | Al riavvio del PC l'app parte nella barra delle icone, senza aprire la finestra |
+| Aspetto | **Settings → Appearance**: scegli un tema (un colore, una gilda, una famiglia o un clan) e uno sfondo; oppure **Collection**, seleziona una carta e **Use as app background** | I colori cambiano subito e restano dopo il riavvio; l'illustrazione si vede dietro tutte le pagine e il testo resta leggibile |
 | Aggiornamento | Quando compare il riquadro, **Restart now** | L'app si riapre alla nuova versione con tutti i dati |
 | Salvataggio dati | Chiudi e riapri l'app | Partite e impostazioni sono ancora lì |
 
@@ -93,6 +94,7 @@ Questo strumento non è approvato da Wizards of the Coast. Se preferisci non usa
 - **MagicAppGTK:** licenza [MIT](LICENSE). Nasce come fork di [MTG Arena Tracker](https://github.com/Shalkith/MTG-Arena-Tracker) di Shalkith. Questo repository non contiene il suo codice sorgente.
 - **collection-reader:** licenza [GPL-3.0](native/collection-reader/LICENSE), sorgente completo in [`native/collection-reader`](native/collection-reader). Include [HackF5.UnitySpy](https://github.com/frcaton/mtga-tracker-daemon).
 - **Dati:** [Scryfall](https://scryfall.com/), [17Lands](https://www.17lands.com/) e le liste dei mazzi di [magic.gg](https://magic.gg/).
+- **Simboli dei temi e dell'icona** (mana, gilde, clan, famiglie, planeswalker): dalla font [Mana](https://mana.andrewgioia.com) di Andrew Gioia, licenza SIL OFL 1.1.
 
 ## Progetto non ufficiale
 
