@@ -31,7 +31,7 @@ L'app si aggiorna da sola. Controlla se c'è una nuova versione all'avvio e poi 
 - **Restart now:** l'app si chiude, si aggiorna e si riapre in pochi secondi.
 - **Later:** l'aggiornamento si installa quando chiudi l'app.
 
-Durante una partita il riquadro non compare: aspetta la fine della partita. In **Settings → Updates** vedi la versione installata e puoi controllare subito con **Check for updates**. Le novità di ogni versione sono nel riquadro (**What's new**) e nella pagina delle [release](https://github.com/viser23/MagicAppGTK/releases).
+Durante una partita il riquadro non compare: aspetta la fine della partita. In **Settings → General → Updates** vedi la versione installata e puoi controllare subito con **Check for updates**. Le novità di ogni versione sono nel riquadro (**What's new**) e nella pagina delle [release](https://github.com/viser23/MagicAppGTK/releases).
 
 ## Configurare Arena (una volta sola)
 
@@ -42,6 +42,8 @@ Se in **Collection** compare l'avviso "card catalog was not found", Arena è ins
 
 ## Cosa provare
 
+L'app si apre nella lingua di Windows (italiano o inglese); qui sotto i menu hanno il nome inglese, tra parentesi quello italiano quando serve.
+
 | Funzione | Come | Cosa controllare |
 |---|---|---|
 | Partite e mazzi | Apri Arena, poi tieni l'app aperta mentre giochi | Risultato, formato e mazzo corretti; le carte viste dall'avversario |
@@ -49,15 +51,19 @@ Se in **Collection** compare l'avviso "card catalog was not found", Arena è ins
 | Analisi dei turni | A partita finita, **Matches → Turns** | Il grafico del mana con carte pescate e giocate, tuo e dell'avversario, per ogni game; se eri di mano o di pescata |
 | Collezione | Con Arena aperto e il login fatto, **Collection → Sync from Arena** | Carte possedute e wildcard corrispondono al gioco |
 | Immagini carte | **Collection → Download images** | Il download finisce e le immagini si vedono |
-| Valutazioni Limited | **Settings → Limited Ratings → Download from 17Lands** (Premier + Quick Draft) | I dati si scaricano e compaiono sulle carte |
-| Draft in corso | Scarica i dati 17Lands del set, poi inizia un draft (Premier o Quick) con l'app aperta | La pagina **Live Draft** si apre da sola: le carte del pacchetto in ordine di consiglio, ognuna con le sue motivazioni; a lato il tuo pool, i colori aperti e, dalla pick 9, le carte prese dagli altri |
+| Valutazioni Limited | **Settings → Draft → Limited Ratings → Download from 17Lands** (Premier + Quick Draft) | I dati si scaricano e compaiono sulle carte |
+| Draft in corso | Scarica i dati 17Lands del set, poi inizia un draft (Premier o Quick) con l'app aperta | La pagina **Live Draft** si apre da sola: le carte del pacchetto in ordine di consiglio, ognuna con le sue motivazioni e due voti, quello della carta da sola e **Fit** (quanto sta bene con i tuoi pick: colori, archetipo, curva, creature, rimozioni). Una carta forte che arriva più tardi del solito porta il segno **underdrafted** con il suo colore: chi ti passa la busta probabilmente non lo gioca. Sopra il pacchetto scegli l'ordine: **Advice**, **Card**, **Fit** o **Rarity** (resta per le pick successive); la banda a sinistra di ogni carta ne mostra la rarità. A lato il tuo pool, con una banda che mostra quanto pesa ogni colore (carte e percentuale, senza il sideboard), e, dalla pick 9, **Signals**: i colori delle carte che gli altri hanno preso dalle buste tornate indietro; cliccandolo vedi quelle carte in una colonna per colore |
+| Colori degli avversari | Durante un draft: **Live Draft → Live**, pannello a destra, sezioni **The table** e **Your lanes** | Dalla pick 9 della busta 1: quanti dei 7 avversari sono su ogni colore (aperto o conteso) e le coppie possibili, stimati dalle carte che hanno preso dalle buste tornate indietro. Sotto, le coppie migliori per il tuo pool; nelle buste 1 e 2 l'app ti dice se conviene passare a un'altra coppia |
+| Draft di prova | **Live Draft → Live**, senza un draft in corso: scegli il set e premi **Simulate a draft** (servono i dati 17Lands del set) | Un draft come su Arena ma senza Arena: buste con le carte vere del set, 7 avversari simulati che draftano per archetipi; premi **Pick** sulla carta che vuoi (o **Auto-pick #1**). A fine draft lo Storico mostra gli altri 7 posto per posto, con i loro mazzi, accanto alla stima di "The table" |
+| Mazzo in anteprima | Durante o dopo un draft: **Live Draft → Deck** | Il pool come mazzo: creature in colonne per costo di mana, sotto removal, combat trick, altro e terre. I tuoi tag mettono le carte al loro posto; trascina una carta per spostarla. Le carte che non giocherai vanno nel **Sideboard**: non contano più per i tuoi colori e il consiglio dei pick successivi le ignora. A fine draft, per le carte spostate in Removal o Combat tricks senza quel tag, l'app chiede una per una se aggiungerlo |
 | Storico dei draft | **Live Draft → History → Review** | Ogni pick con il pacchetto com'era e il consiglio di quel momento |
-| Draft con un amico | Prima in **Settings → Draft with Friends** scrivete il vostro nome. Chi gioca, durante il draft: **Live Draft → Share draft** e manda il codice all'amico; l'amico: **Live Draft → Friend**, incolla il codice e **Follow** | L'amico vede le tue pick in diretta e ti consiglia con stelle, nota e tag; tu vedi i consigli sotto le carte, con il bordo verde o rosso, e puoi accettare un tag o ignorare un amico |
+| Draft con un amico | Prima in **Settings → Draft → Draft with Friends** scrivete il vostro nome. Chi gioca, durante il draft: **Live Draft → Share draft** e manda il codice all'amico; l'amico: **Live Draft → Friend**, incolla il codice e **Follow** | L'amico vede le tue pick in diretta e ti consiglia con stelle, nota e tag; tu vedi i consigli sotto le carte, con il bordo verde o rosso, e puoi accettare un tag o ignorare un amico |
 | Mazzo dell'avversario | Gioca una partita Constructed (per esempio Standard) | Nella pagina **Live Match**, dopo un paio di carte dell'avversario, il riquadro **Probable deck** indica il mazzo più probabile e **Still to expect** le carte che possono ancora arrivare |
 | Costruire un mazzo | **Decks → + New deck**, oppure **Import list** con una lista copiata da Arena | Aggiunta e rimozione delle carte, salvataggio, **📋 Copy for Arena** da incollare in Arena |
-| Avvio con Windows | **Settings → Preferences → Start with Windows (in the system tray)** | Al riavvio del PC l'app parte nella barra delle icone, senza aprire la finestra |
+| Avvio con Windows | **Settings → General → Preferences → Start with Windows (in the system tray)** | Al riavvio del PC l'app parte nella barra delle icone, senza aprire la finestra |
 | Aspetto | **Settings → Appearance**: scegli un tema (un colore, una gilda, una famiglia o un clan) e uno sfondo; oppure **Collection**, seleziona una carta e **Use as app background** | I colori cambiano subito e restano dopo il riavvio; l'illustrazione si vede dietro tutte le pagine e il testo resta leggibile |
-| Carte in italiano | **Settings → Card Language → Italiano**, poi in **Collection** seleziona una carta; prova anche la ricerca nel testo (**¶**) con parole italiane | Nome, tipo e testo della carta sono quelli di Arena in italiano, un'abilità per riga; le carte doppie mostrano tutte e due le facce |
+| App in italiano o in inglese | **Settings → Appearance → App Language** (**Impostazioni → Aspetto → Lingua dell'app**): Come Windows, English o Italiano | La finestra si ricarica nella lingua scelta: menu, pagine, messaggi, notifiche e novità di ogni versione; il menu dell'icona nella barra cambia subito |
+| Carte in italiano | **Settings → Appearance → Card Language → Italiano**, poi in **Collection** seleziona una carta; prova anche la ricerca nel testo (**¶**) con parole italiane | Nome, tipo e testo della carta sono quelli di Arena in italiano, un'abilità per riga; le carte doppie mostrano tutte e due le facce |
 | Aggiornamento | Quando compare il riquadro, **Restart now** | L'app si riapre alla nuova versione con tutti i dati |
 | Salvataggio dati | Chiudi e riapri l'app | Partite e impostazioni sono ancora lì |
 
@@ -76,7 +82,7 @@ Le immagini occupano spazio: tutti i set insieme arrivano a circa 2 GB.
 
 Apri una [issue](https://github.com/viser23/MagicAppGTK/issues) (serve un account GitHub gratuito) e scrivi:
 
-- cosa stavi facendo e quale versione usi (**Settings → Updates**);
+- cosa stavi facendo e quale versione usi (**Settings → General → Updates**);
 - cosa ti aspettavi e cosa è successo;
 - se puoi, allega `%APPDATA%\mtg-arena-auto-tracker\logs\app.log`. Se il problema era nella sessione precedente, allega anche `app.previous.log`.
 
@@ -85,7 +91,7 @@ I log contengono i percorsi dei file, quindi anche il tuo nome utente di Windows
 ## Cosa fa sul tuo PC
 
 - **Legge** il log di Arena (`Player.log`) e il file delle carte nella cartella di Arena, senza modificarli.
-- **Scarica** dati e immagini delle carte da Scryfall, le statistiche da 17Lands e, una volta alla settimana, le liste dei mazzi Standard pubblicate da Wizards of the Coast su magic.gg (per indovinare il mazzo dell'avversario). Non invia i tuoi dati a nessuno e non c'è telemetria.
+- **Scarica** dati e immagini delle carte da Scryfall, le statistiche da 17Lands e, una volta alla settimana, le liste dei mazzi Standard pubblicate da Wizards of the Coast su magic.gg e, se le scarichi tu da Settings → Decklists, quelle Pioneer di Magic Online su mtgo.com (per indovinare il mazzo dell'avversario). Non invia i tuoi dati a nessuno e non c'è telemetria.
 - **Controlla gli aggiornamenti** leggendo le release di questo repository su GitHub, e scarica da lì le nuove versioni.
 - **Condivide un draft solo se lo chiedi tu** con **Share draft**: le carte del pacchetto, le tue pick, il nome che hai scelto e i consigli degli amici passano da un database Firebase (Google), con un accesso anonimo e senza account. Lo legge solo chi ha il codice. Con **Stop sharing** il draft si cancella subito; altrimenti dopo 24 ore nessuno può più leggerlo e l'app lo cancella al primo avvio successivo. L'email in Settings resta sul tuo PC.
 - **Legge la memoria di Arena solo per la collezione**, quando clicchi **Sync from Arena** o se attivi tu la sincronizzazione automatica. Lo fa `collection-reader`, un piccolo programma separato: legge soltanto, non modifica il gioco, non usa la rete e non chiede i privilegi di amministratore.
@@ -96,7 +102,7 @@ Questo strumento non è approvato da Wizards of the Coast. Se preferisci non usa
 
 - **MagicAppGTK:** licenza [MIT](LICENSE). Nasce come fork di [MTG Arena Tracker](https://github.com/Shalkith/MTG-Arena-Tracker) di Shalkith. Questo repository non contiene il suo codice sorgente.
 - **collection-reader:** licenza [GPL-3.0](native/collection-reader/LICENSE), sorgente completo in [`native/collection-reader`](native/collection-reader). Include [HackF5.UnitySpy](https://github.com/frcaton/mtga-tracker-daemon).
-- **Dati:** [Scryfall](https://scryfall.com/), [17Lands](https://www.17lands.com/) e le liste dei mazzi di [magic.gg](https://magic.gg/).
+- **Dati:** [Scryfall](https://scryfall.com/), [17Lands](https://www.17lands.com/) e le liste dei mazzi di [magic.gg](https://magic.gg/) e [Magic Online](https://www.mtgo.com/decklists).
 - **Simboli dei temi e dell'icona** (mana, gilde, clan, famiglie, planeswalker): dalla font [Mana](https://mana.andrewgioia.com) di Andrew Gioia, licenza SIL OFL 1.1.
 
 ## Progetto non ufficiale
